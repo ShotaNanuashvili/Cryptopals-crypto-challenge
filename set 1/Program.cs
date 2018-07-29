@@ -14,7 +14,7 @@ namespace set_1
                 HexToBase64.ConvertHexToBase64();
             }
             if(answer == "2") {
-                FixedXOR.DoXor();
+                FixedXOR.XOR();
             }
         }
     }
