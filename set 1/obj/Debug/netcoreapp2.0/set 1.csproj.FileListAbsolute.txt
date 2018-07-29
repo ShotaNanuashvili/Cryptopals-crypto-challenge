@@ -1,0 +1,11 @@
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/bin/Debug/netcoreapp2.0/set 1.deps.json
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/bin/Debug/netcoreapp2.0/set 1.runtimeconfig.json
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/bin/Debug/netcoreapp2.0/set 1.runtimeconfig.dev.json
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/bin/Debug/netcoreapp2.0/set 1.dll
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/bin/Debug/netcoreapp2.0/set 1.pdb
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/obj/Debug/netcoreapp2.0/set 1.csprojResolveAssemblyReference.cache
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/obj/Debug/netcoreapp2.0/set 1.csproj.CoreCompileInputs.cache
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/obj/Debug/netcoreapp2.0/set 1.AssemblyInfoInputs.cache
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/obj/Debug/netcoreapp2.0/set 1.AssemblyInfo.cs
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/obj/Debug/netcoreapp2.0/set 1.dll
+/home/shotiko/Desktop/Cryptopals-crypto-challenge/set 1/obj/Debug/netcoreapp2.0/set 1.pdb
