@@ -11,5 +11,9 @@ namespace set_1
                 .Select(x => Convert.ToByte(hex.Substring(x, 2), 16))
                 .ToArray();
         }
+
+        public static string ByteArrayToString(byte[] bytes) {
+            return System.Text.Encoding.Default.GetString(bytes);
+        }
     }
 }
