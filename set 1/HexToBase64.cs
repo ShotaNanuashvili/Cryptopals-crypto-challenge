@@ -10,14 +10,16 @@ namespace set_1
      */
     class HexToBase64
     {
-        public static void ConvertHexToBase64() {
+        public static void ConvertHexToBase64()
+        {
             System.Console.WriteLine("Enter Hex: ");
             var hex = Console.ReadLine();
             var base64 = DoConvert(hex);
             System.Console.WriteLine("Base64: \n" + base64);
         }
 
-        private static string DoConvert(string hex) {
+        private static string DoConvert(string hex)
+        {
             return Convert.ToBase64String(Helper.HexToByteArray(hex));
         }
     }

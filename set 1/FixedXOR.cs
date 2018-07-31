@@ -11,22 +11,25 @@ namespace set_1
      */
     class FixedXOR
     {
-        private static string DoXor(string buffer1, string buffer2) {
+        private static string DoXor(string buffer1, string buffer2)
+        {
             byte[] bytes1 = Helper.HexToByteArray(buffer1);
             byte[] bytes2 = Helper.HexToByteArray(buffer2);
-            for(int i = 0; i<bytes1.Length; i++) {
-                bytes1[i] ^= bytes2[i]; 
+            for (int i = 0; i < bytes1.Length; i++)
+            {
+                bytes1[i] ^= bytes2[i];
             }
-            var res = BitConverter.ToString(bytes1).Replace("-","");
+            var res = BitConverter.ToString(bytes1).Replace("-", "");
             return res;
         }
 
-        public static void XOR() {
+        public static void XOR()
+        {
             System.Console.WriteLine("Enter first buffer: ");
             string buffer1 = Console.ReadLine();
             System.Console.WriteLine("Enter second buffer: ");
             string buffer2 = Console.ReadLine();
-            System.Console.WriteLine("Result: " + DoXor(buffer1,buffer2));
+            System.Console.WriteLine("Result: " + DoXor(buffer1, buffer2));
         }
     }
 }
