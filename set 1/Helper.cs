@@ -16,7 +16,7 @@ namespace set_1
 
         public static string ByteArrayToString(byte[] bytes)
         {
-            return System.Text.Encoding.Default.GetString(bytes);
+            return Encoding.Default.GetString(bytes);
         }
 
         public static string ByteArrayToHex(byte[] bytes)
