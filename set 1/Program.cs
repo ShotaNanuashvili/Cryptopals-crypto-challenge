@@ -34,7 +34,16 @@ namespace set_1
                 case "5":
                     RepeatingXOR.XOR();
                     break;
-                default : 
+                case "6":
+                    Console.WriteLine("NOT DONE YET!");
+                    break;
+                case "7":
+                    Console.WriteLine("NOT DONE YET!");
+                    break;
+                case "8":
+                    Console.WriteLine("NOT DONE YET!");
+                    break;
+                default:
                     Console.ReadKey();
                     break;
             }
