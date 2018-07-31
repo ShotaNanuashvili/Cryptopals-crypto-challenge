@@ -12,7 +12,7 @@ namespace set_1
             System.Console.WriteLine("Possibly the original is: " + Decode(hex));
         }
 
-        private static string Decode(string hex) {
+        public static string Decode(string hex) {
             byte[] bytes = Helper.HexToByteArray(hex);
             var possibles = new List<string>();
             for (byte i = 0; i < 255; i++)
@@ -26,7 +26,7 @@ namespace set_1
 
             // find the legit sentence
             int threashold = 5;
-            int longWord = 15;
+            int longWord = 12;
             char[] arr = {'a','e','i','o','u','y','A','E','I','O','U','Y'};
             for (int i = 0; i < possibles.Count; i++)
             {
@@ -39,7 +39,7 @@ namespace set_1
                         break;
                     }
                     //
-                    if(word.Length <= 1 || word[0] >= 65 && word[0] <= 90) continue;
+                    if(word.Length <= 1) continue;
                     int count = 0;
                     for (int j = 0; j < word.Length; j++)
                     {
