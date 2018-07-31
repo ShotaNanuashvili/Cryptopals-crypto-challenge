@@ -14,25 +14,23 @@ namespace set_1
             Console.WriteLine("5 - Repeating-key XOR. ");
             Console.Write("Enter Specific number for a Challenge: ");
             var answer = Console.ReadLine();
-            if (answer == "1")
+            switch (answer)
             {
-                HexToBase64.ConvertHexToBase64();
-            }
-            if (answer == "2")
-            {
-                FixedXOR.XOR();
-            }
-            if (answer == "3")
-            {
-                SingleByteXorCypher.XorCyper();
-            }
-            if (answer == "4")
-            {
-                FindXORed.FindFromFile();
-            }
-            if (answer == "5")
-            {
-                RepeatingXOR.XOR();
+                case "1":
+                    HexToBase64.ConvertHexToBase64();
+                    break;
+                case "2":
+                    FixedXOR.XOR();
+                    break;
+                case "3":
+                    SingleByteXorCypher.XorCyper();
+                    break;
+                case "4":
+                    FindXORed.FindFromFile();
+                    break;
+                case "5":
+                    RepeatingXOR.XOR();
+                    break;
             }
         }
     }
