@@ -24,21 +24,39 @@ namespace set_1
                 possibles.Add(Helper.ByteArrayToString(temp));
             }
 
-            // consecutive non-vowels
+            // find the legit sentence
             int threashold = 5;
+            int longWord = 15;
             char[] arr = {'a','e','i','o','u','y','A','E','I','O','U','Y'};
             for (int i = 0; i < possibles.Count; i++)
             {
-                int count = 0;
-                for(int j = 0; j<possibles[i].Length; j++) {
-                    if(!arr.Contains((possibles[i][j]))) {
-                        count++;
-                        if(count == threashold) break;
-                        continue;
+                bool isNotValid = false;
+                var words = possibles[i].Split(' ');
+                foreach(var word in words) {
+                    //very long words
+                    if(word.Length > longWord) {
+                        isNotValid = true;
+                        break;
                     }
-                    count = 0;
-                    if(j==possibles[i].Length-1) return possibles[i];
+                    //
+                    if(word.Length <= 1 || word[0] >= 65 && word[0] <= 90) continue;
+                    int count = 0;
+                    for (int j = 0; j < word.Length; j++)
+                    {
+                        if(arr.Contains(word[j])) {
+                            count = 0;
+                            continue;
+                        }
+                        count++;
+                        // 5 or more consecutive consonants
+                        if(count >= threashold) {
+                            isNotValid = true;
+                            break;
+                        }
+                    }
+                    if(isNotValid)break;
                 }
+                if(!isNotValid) return possibles[i];
             }
             return "";
         }

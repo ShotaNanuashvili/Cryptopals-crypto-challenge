@@ -11,7 +11,7 @@ namespace set_1
      */
     class FixedXOR
     {
-        public static string DoXor(string buffer1, string buffer2) {
+        private static string DoXor(string buffer1, string buffer2) {
             byte[] bytes1 = Helper.HexToByteArray(buffer1);
             byte[] bytes2 = Helper.HexToByteArray(buffer2);
             for(int i = 0; i<bytes1.Length; i++) {
