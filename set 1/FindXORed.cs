@@ -5,6 +5,9 @@ using System.IO;
 
 namespace set_1
 {
+    /*
+        Decrypting from strings.txt
+     */
     public class FindXORed
     {
         public static void FindFromFile()

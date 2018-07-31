@@ -11,6 +11,7 @@ namespace set_1
             Console.WriteLine("2 - XOR two buffers. ");
             Console.WriteLine("3 - Single byte XOR cypher. ");
             Console.WriteLine("4 - Find XORed string. ");
+            Console.WriteLine("5 - Repeating-key XOR. ");
             Console.Write("Enter Specific number for a Challenge: ");
             var answer = Console.ReadLine();
             if (answer == "1")
@@ -28,6 +29,10 @@ namespace set_1
             if (answer == "4")
             {
                 FindXORed.FindFromFile();
+            }
+            if (answer == "5")
+            {
+                RepeatingXOR.XOR();
             }
         }
     }

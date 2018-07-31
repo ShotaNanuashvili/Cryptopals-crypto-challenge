@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Text;
 
 namespace set_1
 {
@@ -16,6 +17,16 @@ namespace set_1
         public static string ByteArrayToString(byte[] bytes)
         {
             return System.Text.Encoding.Default.GetString(bytes);
+        }
+
+        public static string ByteArrayToHex(byte[] bytes)
+        {
+            return BitConverter.ToString(bytes).Replace("-", "");
+        }
+
+        public static byte[] StringToByteArray(string s)
+        {
+            return Encoding.ASCII.GetBytes(s);
         }
     }
 }
